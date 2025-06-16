@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes and Pseudo-elements</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: rgb(43, 250, 112);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: rgb(24, 112, 54);
+            text-decoration: underline;
+        }
+
+        a:visited {
+            color: rgb(26, 116, 49);
+        }
+
+        a:active {
+            color: rgb(255, 0, 0);
+        }
+
+        .especial {
+            background-color:  rgb(206, 255, 222);
+        }
+
+        #main::before {
+            content: '☂  ';
+        }
+
+        #main::after {
+            content: '  ☂';
+        }
+
+        a::before {
+            content: '♰  ';
+        }
+
+        a::after {
+            content: '  ♰';
+        }
+    </style>
+</head>
+<body>
+    <h1>Customizing links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabaram.github.io" target="_blank">Github repository</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank" class="especial" id="main">Youtube channel</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank" class="especial">cursoemvideo's website</a></li>
+    </ul>
+</body>
+</html>

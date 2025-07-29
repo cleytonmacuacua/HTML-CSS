@@ -13,11 +13,21 @@
             border-collapse: collapse;
             width: 500px;
             border: 1px solid black;
+            position: relative;
         }
 
         th, td {
             border: 1px solid black;
             padding: 10px;
+        }
+
+        thead {
+            position: sticky;
+            top: -1px;
+        }
+        
+         tbody > tr:nth-child(2n) { /* Podemos tambem usar odd or even or 2n-1, 3n, 4n */
+            background-color: lightgray;
         }
 
         caption {
